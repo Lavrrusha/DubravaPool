@@ -1,11 +1,4 @@
-body {
-  font-family: "inter", "Tinos", "Rubik", "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-/* * {
+* {
   padding: 0px;
   margin: 0px;
   border: none;
@@ -23,6 +16,13 @@ body {
   padding: 0 15px;
 }
 
+body {
+  font-family: "inter", "Tinos", "Rubik", "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
@@ -34,17 +34,69 @@ p {
   font-weight: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul,
 ul li {
   list-style: none;
-}
-
-img {
-  vertical-align: top;
 }
 
 img,
 svg {
   max-width: 100%;
   height: auto;
-} */
+}
+
+.wrapper {
+  width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* шапка */
+
+.header-top {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.header-top__list {
+  display: flex;
+  align-items: center;
+}
+
+.header-top__item {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 185%;
+  text-transform: uppercase;
+  padding: 16px 0;
+  flex-basis: 250px;
+  text-align: center;
+  border-right: 1px solid #ffffff75;
+  border-bottom: 1px solid #ffffff5d;
+  opacity: 0,3;
+}
+
+.header-top__item:last-child {
+  border-right: none;
+}
+
+.header-top__link {
+  color: #fff;
+}
+
+.header {
+  position: relative;
+  background-image: url(/img/big-photo-swiper.jpg);
+  background: rgba(0, 2, 35, 0.3), url("path_to_image");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}

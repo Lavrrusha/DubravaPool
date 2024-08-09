@@ -19,37 +19,40 @@
     <!-- шапка сверху -->
     <header class="header-top">
 
-        <nav class="header-top__navigation">
+        <div class="wrapper">
 
-            <ul class="header-top__list">
+            <nav class="header-top__navigation">
 
-                <li class="header-top__item">
-                    <a class="header-top__link" href="#">О нас</a>
-                </li>
+                <ul class="header-top__list">
 
-                <li class="header-top__item">
-                    <a class="header-top__link" href="#">Цены</a>
-                </li>
+                    <li class="header-top__item">
+                        <a class="header-top__link" href="#">О нас</a>
+                    </li>
 
-                <li class="header-top__item">
-                    <a class="header-top__link" href="#">Бар</a>
-                </li>
+                    <li class="header-top__item">
+                        <a class="header-top__link" href="#">Цены</a>
+                    </li>
 
-                <li class="header-top__item">
-                    <a class="header-top__link" href="#">Акции</a>
-                </li>
+                    <li class="header-top__item">
+                        <a class="header-top__link" href="#">Бар</a>
+                    </li>
 
-                <li class="header-top__item">
-                    <a class="header-top__link" href="#">Контакты</a>
-                </li>
+                    <li class="header-top__item">
+                        <a class="header-top__link" href="#">Акции</a>
+                    </li>
 
-                <li class="header-top__item">
-                    <a class="header-top__link" href="#">Подарочные сертификаты</a>
-                </li>
+                    <li class="header-top__item">
+                        <a class="header-top__link" href="#">Контакты</a>
+                    </li>
 
-            </ul>
+                    <li class="header-top__item">
+                        <a class="header-top__link" href="#">Подарочные сертификаты</a>
+                    </li>
 
-        </nav>
+                </ul>
+
+            </nav>
+        </div>
 
     </header>
 
@@ -292,7 +295,8 @@
             </div>
 
             <p class="benefit__disclaimer disclaimer">
-                <svg width="80" height="2" viewBox="0 0 80 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="benefit__icon" width="80" height="2" viewBox="0 0 80 2" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <rect width="80" height="2" fill="#03B6FC" />
                 </svg>
                 На территориии бассейна есть
@@ -308,7 +312,7 @@
 
             <ul class="benefit__list">
                 <li class="benefit__item">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="40" fill="none">
+                    <svg class="benefit__icon" xmlns="http://www.w3.org/2000/svg" width="42" height="40" fill="none">
                         <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
                             d="m24.474 13.804 3.753 11.38c.883 2.619 3.49 4.286 5.717 3.55 2.226-.734 3.383-3.582 2.5-6.202l-3.753-11.38-8.217 2.652Z" />
                         <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
@@ -324,34 +328,100 @@
                 </li>
 
                 <li class="benefit__item">
+                    <svg class="benefit__icon" xmlns="http://www.w3.org/2000/svg" width="42" height="28" fill="none">
+                        <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                            d="m26.113 23.815-12.07-5.78-12.07 5.78C.316 24.61.906 27 2.758 27h22.571c1.851 0 2.44-2.391.784-3.185Z" />
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2"
+                            d="M12.304 13.45c0-.934.78-1.691 1.74-1.691s1.738.756 1.738 1.69c0 1.672-1.739 2.102-1.739 3.017v1.569M28.536 21.62h3.75c1.852 0 2.441-2.39.785-3.184L21 12.655l-2.657 1.272M19.26 8.07c0-.934.78-1.69 1.74-1.69s1.739.756 1.739 1.69c0 1.671-1.74 2.102-1.74 3.016v1.569M35.492 16.241h3.75c1.852 0 2.442-2.39.785-3.184l-12.07-5.781L25.3 8.548M26.217 2.69c0-.933.779-1.69 1.739-1.69.96 0 1.74.757 1.74 1.69 0 1.672-1.74 2.102-1.74 3.017v1.569" />
+                    </svg>
                     Раздевалки и шкафчики под ключ
                 </li>
 
                 <li class="benefit__item">
+                    <svg class="benefit__icon" xmlns="http://www.w3.org/2000/svg" width="42" height="35" fill="none">
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2"
+                            d="M13.463 8.683 10.47 5.681C9.432 4.64 8.54 4.558 7.652 4.558H5.435M1 1h5.766c2.661 0 4.034-.021 5.9 1.85l3.307 3.317M27.2 3.803 16.538 5.69l-1.881 1.888-1.883 1.887-1.881 10.695" />
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2"
+                            d="m15.283 15.756-5.018 5.033s-.628.63 0 1.258l2.51 2.517L31.591 5.691l-2.51-2.516c-.627-.63-1.254 0-1.254 0l-8.781 8.807M23.437 21.418l1.254 1.258M28.455 16.385l1.254 1.258M29.71 27.709l1.254 1.258M34.727 22.676l1.255 1.258M24.691 32.742 25.946 34M39.746 17.643 41 18.901M24.064 27.08l1.254 1.258M29.082 22.047l1.255 1.258M34.1 17.014l1.255 1.258" />
+                    </svg>
                     8 душевых комнат
                 </li>
 
                 <li class="benefit__item">
+                    <svg class="benefit__icon" xmlns="http://www.w3.org/2000/svg" width="35" height="43" fill="none">
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2"
+                            d="M14.378 41.136v-6.243c-7.135 0-11.594-4.013-11.594-9.811M22.405 21.514H1.892c-.492 0-.892.4-.892.892v1.784c0 .492.4.892.892.892h15.162M27.757 41.136V28.649c0-3.567 2.675-3.567 2.675-7.135M31.324 4.569h1.971c.39 0 .705-.4.705-.892V1.893C34 1.4 33.684 1 33.295 1H21.324c-.39 0-.705.4-.705.892v1.784c0 .492.315.892.705.892h6.433" />
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2"
+                            d="M21.514 4.569v16.054c0 .492.4.892.891.892h9.811c.493 0 .892-.4.892-.892V4.569" />
+                    </svg>
                     8 уборных
                 </li>
 
                 <li class="benefit__item">
+                    <svg class="benefit__icon" xmlns="http://www.w3.org/2000/svg" width="43" height="41" fill="none">
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M25.111 41c0-1.75-.434-3.474-1.264-5.015l-4.958-9.207H6.444V41" />
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M32.222 35.667H11.778L2 19.667a4.502 4.502 0 0 1 5.76 1.53l6.684 10.025h18.667l8.889 8M18.889 26.778h4.444" />
+                        <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                            d="m17.44 14.936 1.988-1.772a2.334 2.334 0 0 0-.209-3.651 2.181 2.181 0 0 0 1.39-3.272L18.21 2.338l4.278 1.857a2.126 2.126 0 0 0 2.963-1.759l.134.147c.998 1.093 2.964 1.071 4.06-.101L31.04 1l.39 1.652a2.333 2.333 0 0 0 3.265 1.644l-.06.19a2.334 2.334 0 0 0 1.986 3.026l2.866.295-1.989 1.773a2.334 2.334 0 0 0 .21 3.65l-.195.043c-1.446.318-2.15 1.849-1.629 3.234.305.809 1.173 2.696 1.173 2.696l-2.525-.904a2.334 2.334 0 0 0-3.058 2.006l-.174-.191a2.145 2.145 0 0 0-3.395.298l-2.21 2.81-.434-3.091a2.146 2.146 0 0 0-3.03-1.685l.06-.19c.447-1.41-1.134-2.535-2.06-2.812-.903-.27-2.792-.508-2.792-.508Z" />
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M28.222 15.222a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z" />
+                    </svg>
                     100 шезлонгов
                 </li>
 
                 <li class="benefit__item">
+                    <svg class="benefit__icon" xmlns="http://www.w3.org/2000/svg" width="44" height="37" fill="none">
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M5.478 13.857V37M38.522 13.857V37M22 1C13.888 1 6.657 5.18 2 11.286l3.478 2.571C9.322 8.196 14.792 5.286 22 5.286c7.208 0 12.678 2.91 16.522 8.571L42 11.286C37.343 5.18 30.112 1 22 1Z" />
+                    </svg>
                     Навесы для тени
                 </li>
 
                 <li class="benefit__item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="35" fill="none">
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M30.222 28.966c0 1.436-1.393 2.898-3.11 3.265-1.72.367-3.112-.499-3.112-1.934 0-1.436 1.393-2.898 3.111-3.265 1.718-.367 3.111.498 3.111 1.934Z" />
+                        <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M30.222 28.737v-17c1.778 4.082 4.445 1.926 4.445 7.043" />
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M9.778 22.703c0 1.436-1.393 2.898-3.111 3.265-1.719.367-3.111-.499-3.111-1.934 0-1.436 1.392-2.898 3.11-3.265 1.719-.368 3.112.498 3.112 1.934ZM22.222 18.23c0 1.435-1.393 2.897-3.11 3.264-1.72.368-3.112-.498-3.112-1.934s1.393-2.898 3.111-3.264c1.718-.368 3.111.497 3.111 1.933Z" />
+                        <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M22.222 18V1L9.778 5.474v17M22.222 5.474 9.778 9.947M2.667 2.79v5.368M5.333 5.474H0M37.333 27.842v5.369M40 30.526h-5.333M14.222 29.632V35M16.889 32.316h-5.333M35.556 1v5.368M38.222 3.684H32.89" />
+                    </svg>
                     Фоновая музыка
                 </li>
 
                 <li class="benefit__item">
+                    <svg class="benefit__icon" xmlns="http://www.w3.org/2000/svg" width="33" height="41" fill="none">
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M17.361 9.51H8.75v21.277h4.306V23.98h4.305c3.805 0 6.889-3.049 6.889-6.809v-.85c0-3.76-3.084-6.81-6.889-6.81Zm2.583 7.66c0 1.41-1.156 2.553-2.583 2.553h-4.305v-5.957h4.305c1.427 0 2.583 1.143 2.583 2.553v.851Z" />
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M30.278 35.894H2.722C1.772 35.894 1 35.13 1 34.19V6.106c0-.94.772-1.702 1.722-1.702h27.556c.95 0 1.722.763 1.722 1.702v28.085c0 .94-.772 1.703-1.722 1.703ZM19.083 35.894V41M13.917 41v-5.106M19.083 4.404V2.702c0-.94-.771-1.702-1.722-1.702H15.64c-.95 0-1.722.763-1.722 1.702v1.702" />
+                    </svg>
                     Удобная стоянка
                 </li>
 
                 <li class="benefit__item">
+                    <svg class="benefit__icon" xmlns="http://www.w3.org/2000/svg" width="42" height="42" fill="none">
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2" d="M10.524 33.38H4.81v5.715" />
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2"
+                            d="M39.203 12.872A19.72 19.72 0 0 1 41 21c.01 5.128-1.996 10.263-5.92 14.186C31.218 39.05 26.113 40.948 21 41c-5.587.055-9.677-1.652-13.333-4.761-.648-.55-2.857-2.858-2.857-2.858M2.797 29.127A19.723 19.723 0 0 1 1 21C.99 15.87 2.996 10.737 6.92 6.813 10.783 2.948 15.887 1.05 21 1c5.587-.055 9.677 1.651 13.333 4.76.648.551 2.858 2.859 2.858 2.859" />
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2" d="M31.476 8.62h5.715V2.904" />
+                        <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M21.952 6.714a2.857 2.857 0 0 1 2.857 2.857v15.056c1.905.989 2.858 2.83 2.858 4.944a5.715 5.715 0 0 1-11.429 0c0-2.114.952-3.955 2.857-4.944V9.571a2.857 2.857 0 0 1 2.857-2.857Z" />
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
+                            stroke-width="2" d="M15.286 11.476h-3.81M15.286 16.238h-3.81M15.286 21h-3.81" />
+                    </svg>
                     380С круглый год
                 </li>
 
@@ -517,11 +587,12 @@
 
                 <li class="special-offers__item">
 
-                    <img src="./img/special-offers/img-1.jpg" alt="img-1" width="960" loading="lazy">
+                    <img class="special-offers__image" src="./img/special-offers/img-1.jpg" alt="img-1" width="960"
+                        loading="lazy">
 
                     <h3 class="special-offers__card-name">Скидки именинникам</h3>
 
-                    <p class="special-offers__reservation">Всем, у кого день рождения дарим скидку 10% (*при
+                    <p class="special-offers__disclaimer">Всем, у кого день рождения дарим скидку 10% (*при
                         предъявлении
                         документа на входе)</p>
 
@@ -530,11 +601,12 @@
 
                 <li class="special-offers__item">
 
-                    <img src="./img/special-offers/img-2.jpg" alt="img-2" width="960" loading="lazy">
+                    <img class="special-offers__image" src="./img/special-offers/img-2.jpg" alt="img-2" width="960"
+                        loading="lazy">
 
                     <h3 class="special-offers__card-name">Кофе в подарок</h3>
 
-                    <p class="special-offers__reservation">Всем, кто приходит утром, бодрящий напиток в подарок. Для
+                    <p class="special-offers__disclaimer">Всем, кто приходит утром, бодрящий напиток в подарок. Для
                         самого лучшего дня!</p>
 
                     <a class="special-offers__button button" href="#">Подробнее</a>
@@ -543,13 +615,182 @@
 
         </section>
 
+        <!-- контакты -->
+        <section class="contacts">
+
+            <p class="contacts__description description">Мы ждем Вас
+                <svg width="80" height="2" viewBox="0 0 80 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="80" height="2" fill="#03B6FC" />
+                </svg>
+            </p>
+
+            <h2 class="contacts__title title">Контакты</h2>
+
+            <span class="contacts__disclaimer">Наши бассейны открыты для вас ежедневно с 9:00 до 20:00</span>
+
+            <ul class="contacts__list">
+
+                <li class="contacts__item">
+                    <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="41" height="42" fill="none">
+                        <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M5.643 12.163H19.57M1 36.37c0-2.397 1.857-4.672 4.643-4.672V6.58C2.857 6.581 1 8.836 1 11.233v25.136Z" />
+                        <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M36.286 12.163H40V41H5.663C3.087 41 1 38.863 1 36.35" />
+                        <path stroke="#03B6FC" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M12.143 39.14V26.116H7.5M7.5 21.465h4.643v-7.442M16.786 14.023v15.814h21.357M16.786 39.14v-4.652h21.357" />
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M27.928 1c4.616 0 8.358 3.659 8.358 8.171.002 1.953-.294 3.305-1.428 5.08-1.135 1.773-6.93 10.005-6.93 10.005S22.134 16.024 21 14.25c-1.134-1.774-1.43-3.126-1.428-5.079C19.571 4.66 23.312 1 27.928 1Z" />
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M27.924 6.581H27.933c1.534 0 2.779 1.182 2.781 2.787.003 1.606-1.24 2.795-2.772 2.795H27.916c-1.534 0-2.776-1.189-2.773-2.795.003-1.605 1.247-2.787 2.78-2.787Z" />
+                    </svg>
+
+                    <address class="contacts__address">Теучежский район, вдоль а/д «Южный объезд г. Краснодара» Км
+                        2+500, Краснодар, Республика Адыгея, 385228</address>
+
+                </li>
+
+                <li class="contacts__item">
+
+                    <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="42" height="30" fill="none">
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M41 27.194C41 28.19 40.185 29 39.182 29H2.818A1.813 1.813 0 0 1 1 27.194V2.805C1 1.81 1.815 1 2.818 1h36.364C40.185 1 41 1.81 41 2.806v24.388Z" />
+                        <path stroke="#03B6FC" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2"
+                            d="M38.273 3.71 25.499 16.4a6.393 6.393 0 0 1-8.999 0L4.636 4.613M4.636 25.387l8.182-8.129M37.364 25.387l-8.182-8.129" />
+                    </svg>
+
+                    <a class="contacts__mail" href="mailto:Vipdubrava@mail.ru">Vipdubrava@mail.ru</a>
+
+                </li>
+
+                <li class="contacts__item">
+
+                    <svg class="contacts__icon" xmlns="http://www.w3.org/2000/svg" width="41" height="43" fill="none">
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="m7.103 30.211-.919 2.542A2.71 2.71 0 0 0 7.79 36.22l13.463 4.935a2.681 2.681 0 0 0 3.443-1.617l.919-2.542" />
+                        <path stroke="#03B6FC" stroke-miterlimit="10" stroke-width="2"
+                            d="M33.81 6.417 20.346 1.482a2.681 2.681 0 0 0-3.443 1.617l-9.8 27.112 18.511 6.784 9.8-27.112a2.708 2.708 0 0 0-1.605-3.466ZM13.757 35.53l3.366 1.233M9.56 12.879a4.48 4.48 0 0 0-2.911 2.773 4.527 4.527 0 0 0 .46 4.01M7.02 9.352A8.067 8.067 0 0 0 2.44 14.11a8.145 8.145 0 0 0 .468 6.606M34.8 22.129a4.527 4.527 0 0 1 .46 4.009 4.484 4.484 0 0 1-2.91 2.773M38.994 21.07a8.143 8.143 0 0 1 .47 6.61 8.07 8.07 0 0 1-4.575 4.757" />
+                    </svg>
+
+                    <a href="tel:+79182434145">8 (918) 243-41-45</a>
+
+                    <span class="contacts__user-name">Контактное лицо Вадим</span>
+
+                </li>
+
+            </ul>
+
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a
+                    href="https://yandex.ru/maps/11004/republic-of-adygea/geo/yuzhny_obkhod_2_y_kilometr/1583815504/?ll=39.102298%2C44.945717&utm_medium=mapframe&utm_source=maps&z=17.33"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Южный обход, 2-й километр —
+                    Яндекс Карты</a><iframe
+                    src="https://yandex.ru/map-widget/v1/?ll=39.102298%2C44.945717&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNTgzODE1NTA0En7QoNC-0YHRgdC40Y8sINCg0LXRgdC_0YPQsdC70LjQutCwINCQ0LTRi9Cz0LXRjywg0KLQtdGD0YfQtdC20YHQutC40Lkg0YDQsNC50L7QvSwg0K7QttC90YvQuSDQvtCx0YXQvtC0LCAyLdC5INC60LjQu9C-0LzQtdGC0YAiCg3HaBxCFT7IM0I%2C&z=17.33"
+                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+
+            <svg class="contacts__navigation-icon" width="56" height="78" viewBox="0 0 56 78" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M55.9999 27.4061C55.9999 12.2709 43.4652 0 27.9999 0C12.5346 0 8.92168e-06 12.2709 8.92168e-06 27.4061C-0.00932439 33.9549 0.9831 38.4914 4.78487 44.4413C8.58664 50.3911 27.9999 78 27.9999 78C27.9999 78 47.4132 50.3911 51.215 44.4413C55.0168 38.4914 56.0092 33.9549 55.9999 27.4061ZM27.9999 36C32.4182 36 35.9999 32.4183 35.9999 28C35.9999 23.5817 32.4182 20 27.9999 20C23.5817 20 19.9999 23.5817 19.9999 28C19.9999 32.4183 23.5817 36 27.9999 36Z"
+                    fill="#03B6FC" />
+            </svg>
+
+        </section>
+
     </main>
 
-
+    <!-- подвал -->
     <footer class="footer">
 
+        <nav class="footer__navigation">
+
+            <ul class="footer__list">
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">О нас</a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Цены</a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Бар</a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Акции</a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Контакты</a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Подарочные сертификаты</a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Внести залог</a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Правила нахождения в бассейне</a>
+                </li>
+
+                <li class="footer__item">
+                    <a class="footer__link" href="#">Политика конфиденциальности</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+        <p class="footer__copyright">2024 © Дубрава. Все права защищены.</p>
+
+        <a class="footer__logotype" href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M3.74182 12.0698C3.74182 12.0698 4.40203 11.9943 5.65161 9.81342C5.65161 9.81342 5.67994 9.77528 5.72676 9.702C6.34683 12.6839 9.33152 12.2013 9.33152 12.2013L9.61795 11.0451C7.61294 11.4959 7.58698 9.04289 7.58698 9.04289L10.6594 10.1426C10.9321 9.83185 11.1056 9.44615 11.1787 9.03132C11.2079 10.0247 11.1213 11.0957 10.842 12.2013C10.842 12.2013 12.699 11.4676 13.9836 12.7464C13.9836 12.7464 13.8609 10.5257 13.2188 8.22949C13.587 7.99508 14.3743 7.64923 14.5132 8.87361C14.6958 10.4811 16.7783 12.7087 18.7313 9.94499C18.7313 9.94499 17.5077 10.6782 16.8306 9.1556C16.1972 7.73109 15.9513 5.86388 14.2394 6.412C15.2194 5.60718 16.1362 4.30395 14.9818 3.09244C13.4426 1.47679 11.043 3.40571 10.6204 3.76869C10.3439 3.58184 10.0452 3.43742 9.72221 3.34614C9.72221 3.34614 10.7121 5.1062 11.0631 7.64795C10.8384 6.99055 10.3679 6.38286 9.64391 5.99716C8.78227 5.53733 7.63734 5.62047 6.78946 6.23587C6.96887 4.69736 6.92677 2.63731 6.31142 0L3.32556 1.61693C3.32556 1.61693 5.65161 6.42957 3.53369 9.62572C3.53369 9.62572 0.825598 7.85837 2.52686 4.28638L0.791368 3.94783C0.791368 3.94783 -0.103722 5.04106 0.00998353 6.7587C0.141788 8.74376 1.4201 11.4295 3.74182 12.0698ZM13.8105 4.15739C14.4872 5.05778 13.4745 5.86474 12.5952 6.03959C12.5952 6.03959 12.4338 4.97635 11.8488 4.28424C11.8488 4.28424 13.1338 3.25657 13.8105 4.15739ZM9.35434 6.81356C9.91697 7.02098 10.2242 7.70666 10.116 8.42491L7.86947 7.53995C8.19524 6.93055 8.80666 6.61171 9.35434 6.81356ZM20.1289 9.32445H20.1666C19.8334 10.5651 19.2385 11.2726 18.4972 11.7873C17.143 12.7276 15.3725 12.2013 15.3725 12.2013C15.7718 13.4043 20.1289 15.6602 21.4827 11.6746C22.8366 7.68909 20.3893 4.96307 20.3893 4.96307C20.5152 6.61299 20.4657 7.86137 20.2803 8.82818C19.9231 8.88432 18.0283 9.00003 18.8789 4.88807L16.9349 4.09825C16.9349 4.09825 15.9627 9.73843 20.1289 9.32445Z"
+                    fill="white" />
+                <path
+                    d="M21.5345 15.1341C19.2262 14.5324 17.7504 15.3034 17.7504 15.3034C17.7504 15.3034 19.1392 15.7731 19.3824 18.1987C19.6251 20.6238 17.1775 22.2969 17.1775 22.2969C17.1775 22.2969 19.8856 22.842 21.9166 21.9206C23.9475 20.9997 23.9999 18.7438 23.9999 18.4241C23.9999 18.1044 23.8433 15.7358 21.5345 15.1341ZM20.9503 20.2489C20.9093 20.251 20.8692 20.2497 20.8287 20.2471C21.182 19.8529 21.3984 19.2319 21.3708 18.5415C21.3378 17.7003 20.9526 16.994 20.4289 16.6919C20.5485 16.6464 20.6748 16.6173 20.8066 16.6109C21.6207 16.5732 22.3128 17.357 22.3525 18.3615C22.3922 19.3665 21.7647 20.2116 20.9503 20.2489ZM18.3146 18.4884C18.3146 16.667 16.9332 15.1902 15.2291 15.1902C15.0604 15.1902 14.8947 15.2056 14.7338 15.2335C14.2872 14.0503 13.2143 13.2163 11.9612 13.2163C10.4378 13.2163 9.18069 14.4493 8.99223 16.0439C7.67104 16.307 6.24165 17.2164 5.764 19.7869L7.35274 20.182C7.35274 20.182 7.66947 19.225 8.51892 18.3641L8.55039 18.4618C8.55039 18.4618 8.75892 21.2817 6.64965 21.6202C4.54039 21.9588 3.26444 19.4487 3.91559 17.7851C4.56675 16.121 5.89463 16.5629 5.89463 16.5629L8.46344 13.9496L7.49989 13.5172C4.78314 12.4831 1.2858 14.4008 1.07727 18.6024C0.869137 22.8043 5.21751 25.3709 8.238 23.2277C9.87395 22.0668 10.1958 20.3599 10.1474 19.0391C10.651 19.4552 11.2789 19.7025 11.9612 19.7025C12.0934 19.7025 12.2228 19.6922 12.3503 19.6746C12.7961 20.9093 13.9166 21.7856 15.2291 21.7856C16.9332 21.7856 18.3146 20.3093 18.3146 18.4884ZM12.6249 16.7202C12.5954 16.7703 12.5667 16.8209 12.5392 16.8727C12.3432 17.1684 12.0237 17.3617 11.6618 17.3617C11.3982 17.3617 11.1566 17.2593 10.9685 17.0891C11.1841 17.0536 11.41 17.0296 11.6488 17.0236L11.5709 16.1776C11.5709 16.1776 11.1802 16.0503 10.5991 15.9865C10.6888 15.4384 11.1298 15.0214 11.6618 15.0214C12.2586 15.0214 12.7426 15.5451 12.7426 16.1918C12.7426 16.382 12.6997 16.5612 12.6249 16.7202ZM14.565 19.4487C14.2432 19.4487 13.9544 19.297 13.7541 19.0571C14.325 18.5942 14.7377 17.9154 14.8904 17.1333C15.3358 17.2833 15.6588 17.7333 15.6588 18.2642C15.6588 18.9182 15.169 19.4487 14.565 19.4487Z"
+                    fill="white" />
+            </svg>
+        </a>
+
+        <a class="footer__link-label" href="#">Создание сайта - <span>Very-good</span></a>
 
     </footer>
+
+    <section class="modal-card">
+
+        <p class="modal-card__description description">Заполните простую форму
+            <svg width="832" height="448" viewBox="0 0 832 448" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="832" height="448" fill="white" />
+            </svg>
+        </p>
+
+        <h2 class="modal-card__title title"><span>Забронировать</span> бассейн</h2>
+
+        <span class="modal-card__disclaimer">Наш менеджер свяжется с Вами для уточнения деталей</span>
+
+        <form class="" action="#" method="post">
+
+            <label class="modal-card__label" for="user-name">Ваше имя:</label>
+            <input class="modal-card__input" type="text" id="user-name" name="name" value="" placeholder="Представьтесь, пожалуйста">
+
+            <label class="modal-card__label" for="user-phone">Телефон:</label>
+            <input class="modal-card__input" type="number" id="" name="tel" placeholder="Введите номер">
+
+            <input class="modal-card__checkbox" type="checkbox">Я согласен с <a href="#">Политикой конфиденциальности</a>
+
+            <button class="modal-card__button button" type="submit">отправить</button>
+
+        </form>
+
+    </section>
 
 </body>
 

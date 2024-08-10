@@ -49,6 +49,11 @@ svg {
   height: auto;
 }
 
+.title {
+  margin: 0;
+  padding: 0;
+}
+
 .visually-hidden:not(:focus),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -298,6 +303,7 @@ input[type="radio"].visually-hidden {
 
 .about-us__sub-item {
   display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -406,4 +412,51 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
   line-height: 143%;
   color: #03b6fc;
+}
+
+/* дополнительные услуги  */
+
+.additional-services {
+  background-image: url(/img/big-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.additional-services__description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.additional-services__title {
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 20%;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.additional-services__text {
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  line-height: 133%; 
+  text-align: center;
+  margin-bottom: 57px;
+}
+
+.additional-services__container {
+  padding-top: 446px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.additional-services__button {
+  color: #fff;
 }

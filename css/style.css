@@ -74,12 +74,18 @@ input[type="radio"].visually-hidden {
   padding: 12px 24px;
   background: #03b6fc;
   text-decoration: none;
-  display: flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   width: max-content;
   border-radius: 32px;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
 }
 
 .button:hover {
@@ -423,6 +429,7 @@ input[type="radio"].visually-hidden {
   background-position: center;
   height: 100vh;
   width: 100%;
+  margin-bottom: 73px;
 }
 
 .additional-services__description {
@@ -445,7 +452,7 @@ input[type="radio"].visually-hidden {
   font-weight: 300;
   font-size: 24px;
   color: #fff;
-  line-height: 133%; 
+  line-height: 133%;
   text-align: center;
   margin-bottom: 57px;
 }
@@ -459,4 +466,353 @@ input[type="radio"].visually-hidden {
 
 .additional-services__button {
   color: #fff;
+}
+
+/* услуги */
+
+.services-slider {
+  margin-bottom: 80px;
+}
+
+.services-slider__list {
+  display: flex;
+  gap: 32px;
+}
+
+.services-slider__image {
+  margin-bottom: 11px;
+}
+
+.services-slider__card-name {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 160%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.services-slider__card-name span {
+  font-style: italic;
+}
+
+.services-slider__price {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: #5b637b;
+  margin-bottom: 30px;
+}
+
+.services-slider__price span {
+  font-weight: 600;
+}
+
+.services-slider__box {
+  display: flex;
+  gap: 16px;
+}
+
+.services-slider__button {
+  color: #5b637b;
+  background: #fff;
+  border: 1px solid #5b637b;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.services-slider__button:hover {
+  color: #fff;
+}
+
+/* продукты */
+
+.products {
+  background: #f3f8fe;
+}
+
+.products__left {
+  position: relative;
+}
+
+.products__image {
+  z-index: 1;
+  position: relative;
+}
+
+.products__image-2 {
+  position: absolute;
+  right: -40px;
+  top: -120px;
+  z-index: 0;
+}
+
+.products__image-3 {
+  position: absolute;
+  top: 306px;
+  left: 154px;
+  z-index: 2;
+}
+
+.products__container {
+  padding-top: 172px;
+  padding-bottom: 290px;
+  display: flex;
+  gap: 280px;
+}
+
+.products__description {
+  justify-content: end;
+}
+
+.products__title {
+  text-align: end;
+}
+
+.products__disclaimer {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 178%;
+  text-align: right;
+  margin-bottom: 80px;
+}
+
+.products__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 32px;
+}
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.products__icon {
+  margin-bottom: 14px;
+}
+
+.products__menu {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.products__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: #03b6fc;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Специальные предложения */
+
+.special-offers {
+  background: #f3f8fe;
+  margin-bottom: 50px;
+}
+
+.special-offers__list {
+  display: flex;
+}
+
+/* контакты */
+
+.contacts__container {
+  display: flex;
+}
+
+.contacts__disclaimer {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 178%;
+  margin-bottom: 47px;
+  color: #5b637b;
+}
+
+.contacts__address {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contacts__mail {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #03b6fc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts__phone {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 167%;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #000223;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contacts__user-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  margin-left: 50px;
+  color: #5b637b;
+}
+
+/* подвал */
+
+.footer {
+  background-image: url(/img/footer-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh;
+  width: 100%;
+  padding-top: 48px;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 45px;
+}
+
+.footer__center {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer__link {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 185%;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer__copyright {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.footer__logotype {
+  background: #03b6fc;
+  border-radius: 200px;
+  padding: 12px;
+}
+
+.footer__link-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: #fff;
+}
+
+.footer__link-label span {
+  color: #000223;
+}
+
+/* форма */
+
+.modal-card {
+  width: 832px;
+  padding-top: 40px;
+}
+
+.modal-card__disclaimer {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 178%;
+  color: #5b637b;
+  margin-bottom: 25px;
+}
+
+.modal-card__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: 000223;
+}
+
+.modal-card__input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 178%;
+  color: #5b637b;
+}
+
+.modal-card__checkbox {
+  font-weight: 400;
+font-size: 14px;
+line-height: 143%;
+color: #4a4a49;
+}
+
+.modal-card__link {
+  color: #03b6fc;
+}
+
+@media (max-width: 1024px) {
+  .header-top__item {
+    display: none;
+  }
+
+  .header__logotype {
+    width: 89px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__navigation {
+    gap: 29px;
+  }
+
+  .header__contacts {
+    gap: 29px;
+  }
+
+  .hero-slider__description {
+    font-size: 18px;
+  }
+
+  .hero-slider__title {
+    padding: 0;
+    margin: 0;
+    font-size: 64px;
+    line-height: 100%;
+    text-align: center;
+  }
 }

@@ -772,8 +772,8 @@ path:hover {
 }
 
 .footer__item {
-  padding: 8px;
-  border-right: 2px solid #5eb6e9;
+  padding: 10px;
+  border-right: 1px solid #ffffff3f;
 }
 
 .footer__link:hover {

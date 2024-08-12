@@ -99,6 +99,14 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+svg {
+  cursor: pointer;
+}
+
+path:hover {
+  color: #0057be;
+}
+
 /* шапка */
 
 .header-top {
@@ -295,7 +303,8 @@ input[type="radio"].visually-hidden {
   gap: 32px;
 }
 
-.about-us__icon {
+.about-us__description:hover {
+  color: #0057be;
 }
 
 .about-us__sub-list {
@@ -309,7 +318,6 @@ input[type="radio"].visually-hidden {
 
 .about-us__sub-item {
   display: flex;
-  flex-direction: column;
   gap: 24px;
 }
 
@@ -328,6 +336,13 @@ input[type="radio"].visually-hidden {
   text-align: center;
   gap: 12px;
   margin-bottom: 23px;
+}
+
+.about-us__item span {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  color: #000223;
 }
 
 .about-us__button {
@@ -624,6 +639,39 @@ input[type="radio"].visually-hidden {
   display: flex;
 }
 
+.special-offers__card {
+  position: relative;
+}
+
+.special-offers__box {
+  width: max-content;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.special-offers__card-name {
+  align-items: center;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 117%;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.special-offers__disclaimer {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 133%;
+  color: #fff;
+  width: 800px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
 /* контакты */
 
 .contacts__container {
@@ -699,7 +747,7 @@ input[type="radio"].visually-hidden {
 
 .footer__list {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin-bottom: 45px;
 }
@@ -718,6 +766,19 @@ input[type="radio"].visually-hidden {
   line-height: 185%;
   text-transform: uppercase;
   color: #fff;
+  padding: 8px;
+  border-radius: 20px;
+  transition: all 0.2s ease-in;
+}
+
+.footer__item {
+  padding: 8px;
+  border-right: 2px solid #5eb6e9;
+}
+
+.footer__link:hover {
+  background: #0057be;
+  border-radius: 20px;
 }
 
 .footer__copyright {
@@ -776,9 +837,9 @@ input[type="radio"].visually-hidden {
 
 .modal-card__checkbox {
   font-weight: 400;
-font-size: 14px;
-line-height: 143%;
-color: #4a4a49;
+  font-size: 14px;
+  line-height: 143%;
+  color: #4a4a49;
 }
 
 .modal-card__link {

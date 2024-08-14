@@ -1,0 +1,34 @@
+// base
+@import "./base/root";
+// @import "./base/fonts";
+@import "./base/normalize";
+@import "./base/global";
+@import "./base/support";
+
+// blocks
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/wrapper";
+@import "./blocks/description";
+
+// sections
+@import "./sections/header-top";
+@import "./sections/header";
+@import "./sections/hero-slider";
+@import "./sections/about-us";
+@import "./benefit";
+@import "./additional-services";
+@import "./services-slider";
+@import "./products";
+@import "./special-offers";
+@import "./contacts";
+@import "./footer";
+@import "./modal-card";
+
+// activity
+// @import "./activity/header-sticky";
+// @import "./activity/menu-open";
+// @import "./activity/search-show";
+
+// effects
+// @import "./effects/click";

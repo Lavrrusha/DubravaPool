@@ -1,0 +1,61 @@
+.contacts {
+
+&__container {
+    display: flex;
+  }
+  
+  &__disclaimer {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 178%;
+    margin-bottom: 47px;
+    color: #5b637b;
+  }
+  
+  &__address {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+&__mail {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #03b6fc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+&__phone {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 167%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #000223;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+&__user-name {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 143%;
+    margin-left: 50px;
+    color: #5b637b;
+  }
+}

@@ -1,0 +1,67 @@
+.header {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
+  }
+
+  &__navigation {
+    display: flex;
+    gap: 32px;
+    color: #fff;
+  }
+
+  &__logotype {
+    margin-top: -50px;
+    margin-right: 60px;
+  }
+
+  &__list {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 185%;
+    text-transform: uppercase;
+    display: flex;
+    gap: 35px;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+    color: #fff;
+  }
+
+  &__item {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__item:hover {
+    transition: all 0.3s;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__link-map {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 185%;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__work-time {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+  }
+}

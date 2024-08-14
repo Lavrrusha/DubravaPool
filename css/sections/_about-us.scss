@@ -1,0 +1,64 @@
+.about-us {
+  &__disclaimer {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 178%;
+    margin-bottom: 48px;
+    color: #5b637b;
+  }
+
+  &__image {
+    margin-bottom: 23px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__description:hover {
+    color: #0057be;
+  }
+
+  &__sub-list {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 32px;
+  }
+
+  &__sub-item {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #5b637b;
+  }
+
+  &__card-name {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 160%;
+    display: flex;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 23px;
+  }
+
+  &__item span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000223;
+  }
+
+  &__button {
+    margin-bottom: 80px;
+  }
+}

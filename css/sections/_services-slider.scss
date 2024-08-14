@@ -1,0 +1,57 @@
+.services-slider {
+  margin-bottom: 80px;
+
+  &__list {
+    display: flex;
+    gap: 32px;
+  }
+
+  &__image {
+    margin-bottom: 11px;
+  }
+
+  &__card-name {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__card-name span {
+    font-style: italic;
+  }
+
+  &__price {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 200%;
+    color: #5b637b;
+    margin-bottom: 30px;
+  }
+
+  &__price span {
+    font-weight: 600;
+  }
+
+  &__box {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__button {
+    color: #5b637b;
+    background: #fff;
+    border: 1px solid #5b637b;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__button:hover {
+    color: #fff;
+  }
+}

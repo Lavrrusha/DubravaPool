@@ -9,9 +9,12 @@
 
   &__list {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 45px;
+  }
+
+  &__item {
+    list-style: none;
   }
 
   &__center {

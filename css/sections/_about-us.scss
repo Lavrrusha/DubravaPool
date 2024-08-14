@@ -12,6 +12,7 @@
   }
 
   &__list {
+    list-style: none;
     display: flex;
     gap: 32px;
   }
@@ -21,8 +22,6 @@
   }
 
   &__sub-list {
-    margin: 0;
-    padding: 0;
     display: grid;
     gap: 32px;
     grid-template-columns: 1fr 1fr;
@@ -34,14 +33,34 @@
     gap: 24px;
   }
 
+  &__title {
+    font-family: (--second-family);
+    font-style: normal;
+  }
+
   &__text {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-    color: #5b637b;
+    color: var(--grey);
+    margin: 0;
   }
 
   &__card-name {
+    font-family: (--second-family);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 23px;
+  }
+
+  &__card-name span {
+    font-style: italic;
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 40px;
     line-height: 160%;
@@ -52,13 +71,40 @@
   }
 
   &__item span {
+    color: #000223;
+    align-items: center;
+    margin: 0;
+  }
+
+  &__sub-list {
+    padding: 0;
+  }
+
+  &__sub-item {
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__sub-item:hover path {
+    stroke: var(--blue);
+  }
+
+  &__sub-list span {
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 24px;
     line-height: 133%;
-    color: #000223;
+    color: var(--darkblue);
   }
 
   &__button {
     margin-bottom: 80px;
+    background: var(--white);
+    color: var(--darkblue);
+    border: 1px solid var(--grey);
+  }
+
+  &__button:hover {
+    border: none;
   }
 }

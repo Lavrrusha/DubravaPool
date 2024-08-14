@@ -6,6 +6,10 @@
     display: flex;
   }
 
+  &__item {
+    list-style: none;
+  }
+
   &__card {
     position: relative;
   }

@@ -1,38 +1,70 @@
-.header-top {
-  position: fixed;
+.header {
+  position: absolute;
   right: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
 
-  &__list {
+  &__box {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding-top: 80px;
   }
 
-  &__item {
+  &__navigation {
+    display: flex;
+    gap: 32px;
+    color: #fff;
+  }
+
+  &__logotype {
+    margin-top: -50px;
+  }
+
+  &__list {
     font-weight: 600;
     font-size: 13px;
     line-height: 185%;
     text-transform: uppercase;
-    padding: 16px 0;
-    flex-basis: 250px;
-    text-align: center;
-    border-right: 1px solid #ffffff3f;
-    border-bottom: 1px solid #ffffff3f;
-    opacity: 0, 3;
-    cursor: pointer;
-  }
-
-  &__item:hover {
-    transition: all 0.6s;
-    background: #0057be;
-  }
-
-  &__item:last-child {
-    border-right: none;
+    display: flex;
+    gap: 35px;
   }
 
   &__link {
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--font-family); 
+    line-height: 125%;
     color: #fff;
+  }
+
+  &__item {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+
+  &__item:hover {
+    transition: all 0.3s;
+    border-bottom: 1px solid #fff;
+  }
+
+  &__link-map {
+    font-weight: 600;
+    font-size: 13px;
+    font-family: var(--font-family);
+    line-height: 185%;
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__work-time {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
   }
 }

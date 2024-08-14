@@ -9,6 +9,7 @@
   }
 
   &__slider-list {
+    list-style: none;
     position: relative;
   }
 
@@ -72,6 +73,7 @@
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
   }
 
   &__link {
@@ -79,5 +81,17 @@
     font-size: 14px;
     line-height: 143%;
     color: #03b6fc;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  &__link:hover {
+    color: var(--blue);
+  }
+
+  &__item:hover path {
+    stroke: var(--blue);
   }
 }

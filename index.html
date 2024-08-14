@@ -1026,35 +1026,47 @@
     <!-- форма "контакты" -->
     <section class="modal-card">
 
-        <div class="wrapper">
 
-            <p class="modal-card__description description">Заполните простую форму
-                <svg width="80" height="2" viewBox="0 0 80 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="80" height="2" fill="#03B6FC" />
-                </svg>
-            </p>
+        <p class="modal-card__description description">Заполните простую форму
+            <svg width="80" height="2" viewBox="0 0 80 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="80" height="2" fill="#03B6FC" />
+            </svg>
+        </p>
 
-            <h2 class="modal-card__title title"><span>Забронировать</span> бассейн</h2>
+        <h2 class="modal-card__title title"><span>Забронировать</span> бассейн</h2>
 
-            <p class="modal-card__disclaimer">Наш менеджер свяжется с Вами для уточнения деталей</p>
+        <p class="modal-card__disclaimer">Наш менеджер свяжется с Вами для уточнения деталей</p>
 
-            <form class="modal-card__form" action="#" method="post">
+        <form class="modal-card__form" action="#" method="post">
 
-                <label class="modal-card__label" for="user-name">Ваше имя:</label>
-                <input class="modal-card__input" type="text" id="user-name" name="name" value=""
-                    placeholder="Представьтесь, пожалуйста">
+            <div class="modal-card__box">
 
-                <label class="modal-card__label" for="user-phone">Телефон:</label>
-                <input class="modal-card__input" type="number" id="" name="tel" placeholder="Введите номер">
+                <div class="modal-card__column">
+                    <label class="modal-card__label" for="user-name">Ваше имя:</label>
+                    <input class="modal-card__input" type="text" id="user-name" name="name" value=""
+                        placeholder="Представьтесь, пожалуйста">
+                </div>
 
-                <input class="modal-card__checkbox" type="checkbox">Я согласен с <a class="modal-card__link"
-                    href="#">Политикой
-                    конфиденциальности</a>
+                <div class="modal-card__column">
+                    <label class="modal-card__label" for="user-phone">Телефон:</label>
+                    <input class="modal-card__input" type="number" id="" name="tel" placeholder="Введите номер">
+                </div>
 
-                <button class="modal-card__button button" type="submit">Отправить</button>
+            </div>
 
-            </form>
-        </div>
+            <div class="modal-card__flex">
+                <div>
+                    <input class="modal-card__checkbox" type="checkbox">Я согласен с <a class="modal-card__link"
+                        href="#">Политикой
+                        конфиденциальности</a>
+                </div>
+
+                <div>
+                    <button class="modal-card__button button" type="submit">Отправить</button>
+                </div>
+            </div>
+
+        </form>
 
     </section>
 

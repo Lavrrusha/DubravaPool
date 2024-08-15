@@ -12,6 +12,7 @@
   }
 
   &__list {
+    padding: 0;
     list-style: none;
     display: flex;
     gap: 32px;
@@ -106,5 +107,89 @@
 
   &__button:hover {
     border: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-us__image {
+    width: 448px;
+  }
+
+  .about-us__disclaimer {
+    margin-bottom: 80px;
+    width: 930px;
+  }
+
+  .about-us__list {
+    padding: 0px 25px;
+  }
+
+  .about-us__list .about-us__sub-list {
+    padding: 0;
+    grid-template-columns: 1fr 208px;
+    margin-bottom: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-us__disclaimer {
+    width: 690px;
+    margin-bottom: 48px;
+  }
+
+  .about-us__list {
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 80px;
+  }
+
+  .about-us__list .about-us__sub-list {
+    grid-template-columns: auto 1fr;
+  }
+
+  .about-us__image {
+    width: 688px;
+  }
+
+  .about-us__button {
+    margin: 0;
+  }
+}
+
+@media (max-width: 365px) {
+  .about-us__title {
+    font-size: 35px;
+    line-height: 114%;
+    margin-bottom: 17px;
+  }
+
+  .about-us__disclaimer {
+    width: 365px;
+    margin-bottom: 40px;
+  }
+
+  .about-us__image {
+    width: 335px;
+    margin-bottom: 17px;
+  }
+
+  .about-us__card-name {
+    font-size: 30px;
+    line-height: 117%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-us__list {
+    margin: 0;
+    gap: 0;
+  }
+
+  .about-us__list .about-us__sub-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-us__button {
+    margin-bottom: 50px;
   }
 }

@@ -253,6 +253,15 @@ button {
   letter-spacing: inherit;
 }
 
+ul,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -920,6 +929,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 11px;
 }
 .services-slider__card-name {
+  margin: 0;
   font-weight: 400;
   font-size: 40px;
   line-height: 160%;
@@ -931,11 +941,12 @@ input[type=radio].visually-hidden {
   font-style: italic;
 }
 .services-slider__price {
+  padding: 0;
+  margin: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 200%;
   color: #5b637b;
-  margin-bottom: 30px;
 }
 .services-slider__price span {
   font-weight: 600;
@@ -943,6 +954,10 @@ input[type=radio].visually-hidden {
 .services-slider__box {
   display: flex;
   gap: 16px;
+}
+.services-slider .services-slider__box {
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
 .services-slider__button {
   color: #5b637b;
@@ -958,6 +973,35 @@ input[type=radio].visually-hidden {
   color: #fff;
 }
 
+@media (max-width: 1024px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+  .services-slider__price {
+    font-size: 16px;
+    line-height: 200%;
+  }
+  .services-slider__list {
+    padding: 0;
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .services-slider__image {
+    width: 448px;
+    margin-bottom: 11px;
+  }
+}
+@media (max-width: 375px) {
+  .services-slider__image {
+    width: 315px;
+    margin-bottom: 17px;
+  }
+  .services-slider__title {
+    font-size: 30px;
+    line-height: 117%;
+  }
+}
 .products {
   background: #f3f8fe;
 }
@@ -981,7 +1025,7 @@ input[type=radio].visually-hidden {
   z-index: 2;
 }
 .products__container {
-  padding-top: 172px;
+  padding-top: 164px;
   padding-bottom: 290px;
   display: flex;
   gap: 280px;
@@ -1000,6 +1044,8 @@ input[type=radio].visually-hidden {
   margin-bottom: 80px;
 }
 .products__list {
+  padding: 0;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px 32px;
@@ -1010,8 +1056,11 @@ input[type=radio].visually-hidden {
 }
 .products__icon {
   margin-bottom: 14px;
+  cursor: pointer;
 }
 .products__menu {
+  margin: 0;
+  padding: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
@@ -1026,11 +1075,110 @@ input[type=radio].visually-hidden {
   display: flex;
   align-items: center;
   gap: 8px;
+  cursor: pointer;
+}
+.products__link:hover {
+  transition: all 0.4s;
+  color: var(--blue);
+}
+.products__item:hover path {
+  stroke: var(--blue);
 }
 
+@media (max-width: 1024px) {
+  .products__image {
+    width: 688px;
+  }
+  .products__image-2 {
+    left: 624px;
+    top: -86px;
+    width: 208px;
+  }
+  .products__image-3 {
+    top: 440px;
+    left: 600px;
+    width: 288px;
+  }
+  .products__container {
+    padding-bottom: 65px;
+    flex-direction: column;
+    gap: 148px;
+  }
+  .products__description {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .products__title {
+    text-align: left;
+  }
+  .products__disclaimer {
+    text-align: left;
+    width: 928px;
+  }
+  .products__icon {
+    margin-bottom: 14px;
+  }
+  .products__list {
+    grid-template-columns: auto 1fr;
+    gap: 40px 254px;
+  }
+}
+@media (max-width: 768px) {
+  .products__disclaimer {
+    width: 768px;
+    margin-bottom: 49px;
+  }
+  .products__title {
+    margin-bottom: 23px;
+  }
+  .products__list {
+    gap: 40px 120px;
+  }
+}
+@media (max-width: 375px) {
+  .products__container {
+    gap: 97px;
+  }
+  .products__image {
+    width: 335px;
+  }
+  .products__image-2 {
+    width: 102px;
+    left: 40px;
+    top: -38px;
+  }
+  .products__image-3 {
+    width: 140px;
+    top: 80px;
+    left: 50px;
+  }
+  .products__description {
+    margin-bottom: 5px;
+  }
+  .products__title {
+    font-size: 35px;
+    line-height: 114%;
+    margin-bottom: 12px;
+  }
+  .products__disclaimer {
+    font-size: 16px;
+    line-height: 156%;
+    width: 335px;
+    margin-bottom: 40px;
+  }
+  .products__list {
+    gap: 40px 25px;
+  }
+  .products__item {
+    width: 160px;
+  }
+}
 .special-offers {
   background: #f3f8fe;
   margin-bottom: 50px;
+}
+.special-offers__description {
+  margin: 0;
 }
 .special-offers__list {
   display: flex;

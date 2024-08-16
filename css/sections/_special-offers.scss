@@ -2,6 +2,10 @@
   background: #f3f8fe;
   margin-bottom: 50px;
 
+&__description {
+  margin: 0;
+}
+
   &__list {
     display: flex;
   }

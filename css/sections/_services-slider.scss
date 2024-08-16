@@ -41,6 +41,17 @@
     font-weight: 600;
   }
 
+  &__price-name {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 213%;
+    letter-spacing: -0.01em;
+  }
+
+  &__price-name span {
+    font-weight: 600;
+  }
+
   &__box {
     display: flex;
     gap: 16px;
@@ -99,5 +110,32 @@
   .services-slider__title {
     font-size: 30px;
     line-height: 117%;
+  }
+
+  .services-slider__price {
+    width: 310px;
+    line-height: 187%;
+  }
+
+  .services-slider__price-name {
+    font-size: 15px;
+    line-height: 213%;
+    letter-spacing: -0.01em;
+  }
+
+  .services-slider__box {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .services-slider .services-slider__box {
+    margin: 0;
+    padding: 0;
+    padding-top: 21px;
+  }
+
+  .services-slider__button {
   }
 }

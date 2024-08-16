@@ -951,6 +951,15 @@ input[type=radio].visually-hidden {
 .services-slider__price span {
   font-weight: 600;
 }
+.services-slider__price-name {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 213%;
+  letter-spacing: -0.01em;
+}
+.services-slider__price-name span {
+  font-weight: 600;
+}
 .services-slider__box {
   display: flex;
   gap: 16px;
@@ -1000,6 +1009,26 @@ input[type=radio].visually-hidden {
   .services-slider__title {
     font-size: 30px;
     line-height: 117%;
+  }
+  .services-slider__price {
+    width: 310px;
+    line-height: 187%;
+  }
+  .services-slider__price-name {
+    font-size: 15px;
+    line-height: 213%;
+    letter-spacing: -0.01em;
+  }
+  .services-slider__box {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .services-slider .services-slider__box {
+    margin: 0;
+    padding: 0;
+    padding-top: 21px;
   }
 }
 .products {
@@ -1138,6 +1167,7 @@ input[type=radio].visually-hidden {
 @media (max-width: 375px) {
   .products__container {
     gap: 97px;
+    padding-top: 80px;
   }
   .products__image {
     width: 335px;
@@ -1217,6 +1247,12 @@ input[type=radio].visually-hidden {
   margin-bottom: 50px;
 }
 
+@media (max-width: 1024px) {
+  .special-offers__title {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .contacts__container {
   display: flex;
 }
@@ -1283,6 +1319,11 @@ input[type=radio].visually-hidden {
   color: #5b637b;
 }
 
+@media (max-width: 1024px) {
+  .contacts__disclaimer {
+    line-height: 133%;
+  }
+}
 .footer {
   background-image: url(/img/footer-img.jpg);
   background-size: cover;

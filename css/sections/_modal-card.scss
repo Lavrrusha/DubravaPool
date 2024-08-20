@@ -28,6 +28,7 @@
     color: #5b637b;
   }
 
+
   &__checkbox {
     font-weight: 400;
     font-size: 14px;
@@ -37,7 +38,13 @@
 
   &__link {
     color: #03b6fc;
+    text-decoration: underline;
   }
+
+  &__link:hover {
+    color: var(--blue);
+  }
+
 
   &__input {
     border: none;

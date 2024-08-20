@@ -460,6 +460,7 @@ input[type=radio].visually-hidden {
 }
 .header__logotype {
   margin-top: -50px;
+  margin-right: 70px;
 }
 .header__list {
   font-weight: 600;
@@ -505,11 +506,10 @@ input[type=radio].visually-hidden {
 
 .hero-slider {
   position: relative;
-  background-image: url(/img/big-photo-swiper.jpg);
+  background-image: url(../img/big-photo-swiper.jpg);
   background: rgba(0, 2, 35, 0.3), url("path_to_image");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
   width: 100%;
   display: flex;
@@ -875,7 +875,7 @@ input[type=radio].visually-hidden {
   }
 }
 .additional-services {
-  background-image: url(/img/big-photo.jpg);
+  background-image: url(../img/big-photo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1422,6 +1422,10 @@ input[type=radio].visually-hidden {
 }
 .modal-card__link {
   color: #03b6fc;
+  text-decoration: underline;
+}
+.modal-card__link:hover {
+  color: var(--blue);
 }
 .modal-card__input {
   border: none;

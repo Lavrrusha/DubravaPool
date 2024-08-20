@@ -1,10 +1,9 @@
 .hero-slider {
   position: relative;
-  background-image: url(/img/big-photo-swiper.jpg);
+  background-image: url(../img/big-photo-swiper.jpg);
   background: rgba(0, 2, 35, 0.3), url("path_to_image");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
   height: 100vh;
   width: 100%;
   display: flex;

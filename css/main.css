@@ -507,7 +507,6 @@ input[type=radio].visually-hidden {
 .hero-slider {
   position: relative;
   background-image: url(../img/big-photo-swiper.jpg);
-  background: rgba(0, 2, 35, 0.3), url("path_to_image");
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -563,6 +562,15 @@ input[type=radio].visually-hidden {
 }
 .about-us__description:hover {
   color: #0057be;
+}
+.about-us__image {
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+.about-us__image:hover {
+  position: relative;
+  box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
 }
 .about-us__sub-list {
   display: grid;

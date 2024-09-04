@@ -1,5 +1,15 @@
 .wrapper {
-    width: 1474px;
-    padding: 0 15px;
-    margin: 0 auto;
+  min-width: calc(1504px + (48 * 2));
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 40px;
+
+  @media (max-width: 1599px) {
+    max-width: 100%;
+    padding-inline: 40px;
   }
+
+  @media (max-width: 767px) {
+    padding-inline: 20px;
+  }
+}
